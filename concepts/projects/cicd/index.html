@@ -76,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#dev-staging-prod" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -900,9 +905,45 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          CI/CD
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         CI/CD
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dev-staging-prod" class="md-nav__link">
+    Dev, Staging, Prod
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pytest-for-feature-logic-and-feature-pipeline-tests" class="md-nav__link">
+    Pytest for feature logic and feature pipeline tests
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3343,6 +3384,44 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dev-staging-prod" class="md-nav__link">
+    Dev, Staging, Prod
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pytest-for-feature-logic-and-feature-pipeline-tests" class="md-nav__link">
+    Pytest for feature logic and feature pipeline tests
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -3352,7 +3431,15 @@
 
   <h1>CI/CD</h1>
 
-
+<p>You can setup traditional development, staging, and production environment in Hopsworks using Projects.
+A project enables you provide access control for the different environments - just like a GitHub repository, owners of projects can add and remove members of projects and assign different roles to project members - the "data owner" role can write to feature store, while a "data scientist" can only read from the feature store and create training data.</p>
+<h2 id="dev-staging-prod">Dev, Staging, Prod<a class="headerlink" href="#dev-staging-prod" title="Permanent link">#</a></h2>
+<p>You can create dev, staging, and prod projects - either on the same cluster, but mostly commonly, with production on its own cluster:</p>
+<p><img src="/assets/images/concepts/projects/dev-staging-prod.svg"></p>
+<h2 id="pytest-for-feature-logic-and-feature-pipeline-tests">Pytest for feature logic and feature pipeline tests<a class="headerlink" href="#pytest-for-feature-logic-and-feature-pipeline-tests" title="Permanent link">#</a></h2>
+<p>Pytest and Great Expectations can be used for testing feature pipelines. Pytest is used to test feature logic and for end-to-end feature pipeline tests, while Great Expectations is used for data validation tests. 
+Here, we can see how a feature pipeline test uses sample data to compute features and validate they have been written successfully, first to a development feature store, and then they can be pushed to a staging feature store, before finally being promoted to production.
+<img src="/assets/images/concepts/projects/feature-pipeline-tests.svg"></p>
 
               
             </article>

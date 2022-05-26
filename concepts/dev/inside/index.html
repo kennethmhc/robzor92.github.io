@@ -621,7 +621,7 @@
   
     <li class="md-nav__item">
       <a href="../../fs/feature_group/fg_overview/" class="md-nav__link">
-        FG Overview
+        Overview
       </a>
     </li>
   
@@ -738,7 +738,7 @@
   
     <li class="md-nav__item">
       <a href="../../fs/feature_view/fv_overview/" class="md-nav__link">
-        FV Overview
+        Overview
       </a>
     </li>
   
@@ -969,7 +969,7 @@
   
     <li class="md-nav__item">
       <a href="../../mlops/kserve/" class="md-nav__link">
-        KServe
+        Model Serving
       </a>
     </li>
   
@@ -3352,23 +3352,18 @@
 
   <h1>Inside Hopsworks</h1>
 
-<p>Hopsworks supports development in Jupyter notebooks, running in Hopsworks.</p>
-<p>You can also develop programs in Python, Spark, Flink outside of Hopsworks, and run them as jobs inside Hopsworks.
-Jobs can be run:</p>
+<p>Hopsworks provides a Jupyter notebook development environment for programs written in Python, Spark, Flink, and SparkSQL. You can also develop in your IDE (PyCharm, IntelliJ, etc), test locally, and then run your programs as Jobs in Hopsworks. Jupyter notebooks can also be run as Jobs.</p>
+<p><img src="/assets/images/concepts/dev/dev-inside.svg"></p>
+<p>Hopsworks provides source code control inside the platform using Git (Github, Gitlab) or Bitbucket.</p>
+<p>In Hopsworks, you can install Python libraries using PyPi, Conda, Wheel files, or Github URLs. The Python libraries are installed in a Conda environment associated with your project. Docker images are compiled transparently for you when you update your Conda enviornment - here is no need for developers to write Dockerfiles, they can just install Python libraries to customize their development or production environments.</p>
+<p>In Hopsworks, a Job is a schedulable program that can is allocated resources. You can run a Job in Hopsworks </p>
 <ul>
 <li>from the UI;</li>
-<li>with the Hopsworks Jobs API;</li>
-<li>from Airflow programs;</li>
-<li>
-<p>in your IDE using a plugin (PyCharm Hopsworks plugin);</p>
-</li>
-<li>
-<p>Jupyter: </p>
-</li>
-<li>Conda Env + Docker Image: </li>
-<li>Git: </li>
+<li>programmatically with the Hopsworks SDK (Python, Java) or REST API;</li>
+<li>from Airflow programs (either inside our outside Hopsworks);</li>
+<li>from your IDE using a plugin (<a href="https://plugins.jetbrains.com/plugin/15537-hopsworks">PyCharm/IntelliJ plugin</a>);</li>
 </ul>
-<p><img src="/assets/images/concepts/dev/dev-inside.svg"></p>
+<p>Airflow comes out-of-the box with Hopsworks, but you can also use an external Airflow cluster (with the Hopsworks Job operator) if you have one. Airflow can be used to schedule the execution of Jobs, individually or as part of bigger DAGs.</p>
 
               
             </article>

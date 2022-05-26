@@ -2,432 +2,432 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.hopsworks.ai/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/alert/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/auth/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/dummy/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/installation/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/project/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/services/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/user/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/ldap/configure-krb/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/ldap/configure-ldap/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/ldap/configure-server/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/oauth2/create-azure-client/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/oauth2/create-client/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/admin/oauth2/create-okta-client/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/hopsworks/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/dev/inside/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/dev/outside/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_group/external_fg/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_group/feature_pipelines/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_group/fg_overview/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_group/fg_statistics/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_group/storage_connector/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_group/versioning/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_group/write_apis/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_view/create_fv/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_view/fv_overview/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_view/online_api/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_view/statistics/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_view/training_data/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_view/transformations/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/fs/feature_view/versioning/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/mlops/flywheel/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/mlops/kserve/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/mlops/mlops/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/mlops/opensearch/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/mlops/projects/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/mlops/registry/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/projects/cicd/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/projects/governance/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/concepts/projects/storage/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/getting_started/fs/fs_gs/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/getting_started/fs/tutorials/aml/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/reference_guides/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/aws/cluster_creation/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/aws/custom_domain_name/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/aws/eks_ecr_integration/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/aws/getting_started/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/aws/instance_profile_permissions/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/aws/restrictive_permissions/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/aws/upgrade/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/aws/upgrade_2.4/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/azure/aks_acr_integration/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/azure/cluster_creation/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/azure/getting_started/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/azure/restrictive_permissions/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/azure/upgrade/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/azure/upgrade_2.4/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/adding_removing_workers/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/api_key/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/autoscaling/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/gpu_support/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/rondb/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/scalingup/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/services/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/terraform/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/user_management/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/aws/upgrade/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/aws/upgrade_2.4/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/azure/upgrade/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/azure/upgrade_2.4/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/sso/ldap/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/sso/oauth/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/common/sso/sso/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/gcp/cluster_creation/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/gcp/getting_started/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/gcp/restrictive_permissions/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/setup_installation/on_prem/hopsworks_installer/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/user_guides/common/dummy/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/user_guides/fs/dummy/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/user_guides/integrations/dummy/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/user_guides/ml/dummy/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/user_guides/ml/deployment/dummy/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/user_guides/ml/model/framworks/dummy/</loc>
-         <lastmod>2022-05-24</lastmod>
+         <lastmod>2022-05-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

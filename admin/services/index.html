@@ -2445,6 +2445,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_5">
@@ -3101,6 +3103,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../user_guides/common/iam_role/iam_role_chaining/" class="md-nav__link">
+        AWS IAM Roles
+      </a>
     </li>
   
 
@@ -4015,6 +4031,8 @@
         
           
         
+          
+        
       
       
         
@@ -4354,6 +4372,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roleChaining/" class="md-nav__link">
+        IAM Role Chaining
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -4437,10 +4469,10 @@ You can find the Services page by clicking on your name, in the top right corner
 <p>This page give administrators an overview of which services are running on the cluster. 
 It provides information about their status as reported by agents that monitor the status of the different 
 Systemd units.</p>
-<p>Columns in the services table represent machines in your cluster. Each service running on a machine will have a status
-<em>running</em> (green), <em>stopped</em> (gray), or <em>bad health</em> (red). 
-Services are divided into groups, and you can search for a service by its name or group. You can also search for
-machines by their host name.</p>
+<p>Columns in the services table represent machines in your cluster. Each service running on a machine will have a status 
+<em>running</em>  (green) or <em>stopped</em> (red). If a service is not installed on a machine it will have a status <em>not installed</em> (gray). 
+Services are divided into groups, and you can search for a service by its name or group. You can also search for machines 
+by their host name.</p>
 <figure>
   <a  href="../../assets/images/admin/services/services.png">
     <img src="../../assets/images/admin/services/services.png" alt="services" />
@@ -4490,13 +4522,13 @@ access the machine running the service and start it with <code>systemctl start g
       
       
         
-        <a href="../../reference_guides/" class="md-footer__link md-footer__link--next" aria-label="Next: API" rel="next">
+        <a href="../roleChaining/" class="md-footer__link md-footer__link--next" aria-label="Next: IAM Role Chaining" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              API
+              IAM Role Chaining
             </div>
           </div>
           <div class="md-footer__button md-icon">

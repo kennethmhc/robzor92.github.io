@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-create-a-feature-group" class="md-skip">
+        <a href="#how-to-compute-statistics-on-feature-data" class="md-skip">
           Skip to content
         </a>
       
@@ -1520,6 +1520,8 @@
         
           
         
+          
+        
       
       
         
@@ -1564,6 +1566,20 @@
     <li class="md-nav__item">
       <a href="../create_external/" class="md-nav__link">
         Create External
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_types/" class="md-nav__link">
+        Data Types and Schema management
       </a>
     </li>
   
@@ -4510,7 +4526,7 @@
                 
 
 
-<h1 id="how-to-create-a-feature-group">How to create a Feature Group<a class="headerlink" href="#how-to-create-a-feature-group" title="Permanent link">#</a></h1>
+<h1 id="how-to-compute-statistics-on-feature-data">How to compute statistics on feature data<a class="headerlink" href="#how-to-compute-statistics-on-feature-data" title="Permanent link">#</a></h1>
 <h3 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h3>
 <p>In this guide you will learn how to configure, compute and visualize statistics for the features registered with Hopsworks. </p>
 <p>Hopsworks groups features in four categories:</p>
@@ -4530,7 +4546,8 @@
 </ul>
 <p>When statistics are enabled, they are computed every time new data is written into the <em>offline</em> storage of a feature group. Statistics are then displayed on the Hopsworks UI and users can track how data has changed over time. </p>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">#</a></h2>
-<p>Before you begin this guide we suggest you read the <a href="../../../../concepts/fs/feature_group/fg_overview/">Feature Group</a> concept page to understand what a feature group is and how it fits in the ML pipeline.</p>
+<p>Before you begin this guide we suggest you read the <a href="../../../../concepts/fs/feature_group/fg_overview/">Feature Group</a> concept page to understand what a feature group is and how it fits in the ML pipeline. 
+We also suggest you familiarize with the APIs to <a href="../create/">create a feature group</a>.</p>
 <h2 id="enable-statistics-when-creating-a-feature-group">Enable statistics when creating a feature group<a class="headerlink" href="#enable-statistics-when-creating-a-feature-group" title="Permanent link">#</a></h2>
 <p>As mentioned above, by default only descriptive statistics are enabled when creating a feature group. To enable histograms, correlations or exact statistics the <code>statistics_config</code> configuration parameter can be provided in the create statement.</p>
 <p>The <code>statistics_config</code> parameter takes a dictionary with the keys: <code>enabled</code>, <code>correlations</code>, <code>histograms</code> and <code>exact_uniqueness</code> and, as values, a boolean to describe whether or not to compute the specific class of statistics.</p>
@@ -4604,7 +4621,7 @@ By default the value is empty list <code>[]</code> and the statistics are comput
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../create_external/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create External" rel="prev">
+        <a href="../data_types/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Data Types and Schema management" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -4613,7 +4630,7 @@ By default the value is empty list <code>[]</code> and the statistics are comput
               <span class="md-footer__direction">
                 Previous
               </span>
-              Create External
+              Data Types and Schema management
             </div>
           </div>
         </a>

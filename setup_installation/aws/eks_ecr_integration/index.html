@@ -19,7 +19,7 @@
     
     
       
-        <title>Integration with Amazon EKS and Amazon ECR - Hopsworks Documentation</title>
+        <title>EKS/ECR integration - Hopsworks Documentation</title>
       
     
     
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Integration with Amazon EKS and Amazon ECR
+              EKS/ECR integration
             
           </span>
         </div>
@@ -246,6 +246,8 @@
         
   
   
+    
+  
 
 
   
@@ -257,7 +259,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../getting_started/" class="md-tabs__link">
+      <a href="../getting_started/" class="md-tabs__link md-tabs__link--active">
         Setup and Installation
       </a>
     </li>
@@ -3119,12 +3121,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
@@ -3157,17 +3161,23 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" type="checkbox" id="__nav_5_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1" type="checkbox" id="__nav_5_1" checked>
       
       
       
+        
+          
+        
+          
         
           
         
@@ -3209,6 +3219,150 @@
   
   
     <li class="md-nav__item">
+      <a href="../cluster_creation/" class="md-nav__link">
+        Cluster Creation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          EKS/ECR integration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        EKS/ECR integration
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-create-an-eks-cluster-on-aws" class="md-nav__link">
+    Step 1: Create an EKS cluster on AWS
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 1: Create an EKS cluster on AWS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-11-installing-eksctl-aws-and-kubectl" class="md-nav__link">
+    Step 1.1: Installing eksctl, aws, and kubectl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-12-create-an-eks-cluster-using-eksctl" class="md-nav__link">
+    Step 1.2: Create an EKS cluster using eksctl
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-create-an-instance-profile-role-on-aws" class="md-nav__link">
+    Step 2: Create an instance profile role on AWS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-allow-your-role-to-use-your-eks-cluster" class="md-nav__link">
+    Step 3: Allow your role to use your EKS cluster
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-setup-network-connectivity" class="md-nav__link">
+    Step 4: Setup network connectivity
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 4: Setup network connectivity">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-a-run-hopsworks-and-eks-in-the-same-virtual-network" class="md-nav__link">
+    Option A: run Hopsworks and EKS in the same virtual network.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-b-create-a-pairing-between-hopsworks-and-eks" class="md-nav__link">
+    Option B: create a pairing between Hopsworks and EKS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-allow-hopsworksai-to-delete-ecr-repositories-on-your-behalf" class="md-nav__link">
+    Step 5: Allow Hopsworks.ai to delete ECR repositories on your behalf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-create-a-hopsworks-cluster-with-eks-and-ecr-support" class="md-nav__link">
+    Step 6: Create a Hopsworks cluster with EKS and ECR support
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../restrictive_permissions/" class="md-nav__link">
         Limiting Permissions
       </a>
@@ -3222,10 +3376,63 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_1_5" type="checkbox" id="__nav_5_1_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_1_5">
+          Cluster upgrade
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Cluster upgrade" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_1_5">
+          <span class="md-nav__icon md-icon"></span>
+          Cluster upgrade
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../cluster_creation/" class="md-nav__link">
-        Cluster Creation
+      <a href="../upgrade_2.4/" class="md-nav__link">
+        Version 2.4 or newer
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../upgrade/" class="md-nav__link">
+        Version 2.2 or older
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -3253,6 +3460,10 @@
       
       
       
+        
+          
+        
+          
         
           
         
@@ -3294,6 +3505,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../azure/cluster_creation/" class="md-nav__link">
+        Cluster Creation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../azure/aks_acr_integration/" class="md-nav__link">
+        AKS/ACR integration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../azure/restrictive_permissions/" class="md-nav__link">
         Limiting Permissions
       </a>
@@ -3307,10 +3546,63 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_5" type="checkbox" id="__nav_5_2_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5_2_5">
+          Cluster upgrade
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Cluster upgrade" data-md-level="3">
+        <label class="md-nav__title" for="__nav_5_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Cluster upgrade
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../../azure/cluster_creation/" class="md-nav__link">
-        Cluster Creation
+      <a href="../../azure/upgrade_2.4/" class="md-nav__link">
+        Version 2.4 or newer
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../azure/upgrade/" class="md-nav__link">
+        Version 2.2 or older
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -3379,8 +3671,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gcp/restrictive_permissions/" class="md-nav__link">
-        Limiting Permissions
+      <a href="../../gcp/cluster_creation/" class="md-nav__link">
+        Cluster Creation
       </a>
     </li>
   
@@ -3393,8 +3685,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../gcp/cluster_creation/" class="md-nav__link">
-        Cluster Creation
+      <a href="../../gcp/restrictive_permissions/" class="md-nav__link">
+        Limiting Permissions
       </a>
     </li>
   
@@ -3423,8 +3715,6 @@
       
       
       
-        
-          
         
           
         
@@ -3579,14 +3869,14 @@
       
       
         <label class="md-nav__link" for="__nav_5_4_8">
-          Cluster upgrade
+          Single Sign On
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Cluster upgrade" data-md-level="3">
+      <nav class="md-nav" aria-label="Single Sign On" data-md-level="3">
         <label class="md-nav__title" for="__nav_5_4_8">
           <span class="md-nav__icon md-icon"></span>
-          Cluster upgrade
+          Single Sign On
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -3611,185 +3901,12 @@
       
       
         <label class="md-nav__link" for="__nav_5_4_8_1">
-          From version 2.4 or newer
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="From version 2.4 or newer" data-md-level="4">
-        <label class="md-nav__title" for="__nav_5_4_8_1">
-          <span class="md-nav__icon md-icon"></span>
-          From version 2.4 or newer
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../common/aws/upgrade_2.4/" class="md-nav__link">
-        AWS
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../common/zure/upgrade_2.4.md" class="md-nav__link">
-        Azure
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4_8_2" type="checkbox" id="__nav_5_4_8_2" >
-      
-      
-      
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_5_4_8_2">
-          From version 2.2 or older
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="From version 2.2 or older" data-md-level="4">
-        <label class="md-nav__title" for="__nav_5_4_8_2">
-          <span class="md-nav__icon md-icon"></span>
-          From version 2.2 or older
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../common/aws/upgrade/" class="md-nav__link">
-        AWS
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../common/azure/upgrade/" class="md-nav__link">
-        Azure
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4_9" type="checkbox" id="__nav_5_4_9" >
-      
-      
-      
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_5_4_9">
-          Single Sign On
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Single Sign On" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_4_9">
-          <span class="md-nav__icon md-icon"></span>
-          Single Sign On
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4_9_1" type="checkbox" id="__nav_5_4_9_1" >
-      
-      
-      
-        
-          
-        
-          
-        
-      
-      
-        <label class="md-nav__link" for="__nav_5_4_9_1">
           Hopsworks
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Hopsworks" data-md-level="4">
-        <label class="md-nav__title" for="__nav_5_4_9_1">
+        <label class="md-nav__title" for="__nav_5_4_8_1">
           <span class="md-nav__icon md-icon"></span>
           Hopsworks
         </label>
@@ -4559,10 +4676,15 @@ Go to the <a href="https://console.aws.amazon.com/iam"><em>IAM service</em></a> 
 <span class="w">            </span><span class="p">]</span><span class="w"></span>
 <span class="w">        </span><span class="p">},</span><span class="w"></span>
 <span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;Sid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AllowCreateRespositry&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;Effect&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Allow&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;Action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ecr:CreateRepository&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="nt">&quot;Resource&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">},</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
 <span class="w">            </span><span class="nt">&quot;Sid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;AllowPushandPullImages&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">            </span><span class="nt">&quot;Effect&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Allow&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">            </span><span class="nt">&quot;Action&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">                </span><span class="s2">&quot;ecr:CreateRepository&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">                </span><span class="s2">&quot;ecr:GetDownloadUrlForLayer&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">                </span><span class="s2">&quot;ecr:BatchGetImage&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">                </span><span class="s2">&quot;ecr:CompleteLayerUpload&quot;</span><span class="p">,</span><span class="w"></span>
@@ -4600,10 +4722,10 @@ Go to the <a href="https://console.aws.amazon.com/iam"><em>IAM service</em></a> 
 <p>Copy the <em>Role ARN</em> of your profile (not to be confused with the <em>Instance Profile ARNs</em> two lines bellow).</p>
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/instance-profile-arn.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/instance-profile-arn.png" alt="Coppy the Role ARN">
+    <a  href="../../../assets/images/setup_installation/managed/aws/instance-profile-arn.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/instance-profile-arn.png" alt="Copy the Role ARN">
     </a>
-    <figcaption>Coppy the *Role ARN*</figcaption>
+    <figcaption>Copy the *Role ARN*</figcaption>
   </figure>
 </p>
 
@@ -4689,8 +4811,8 @@ OutputValue: <span class="s2">&quot;YOUR_EKS_SECURITY_GROUP_ID&quot;</span>
 <p>Go to the <a href="https://us-east-2.console.aws.amazon.com/ec2/v2/home?#SecurityGroups:"><em>Security Groups</em> section of <em>EC2</em> in the <em>AWS management console</em></a> and search for your security group using the id obtained above. Note the <em>VPC ID</em>, you will need it when creating the hopsworks cluster. Then, click on it then go to the <em>Inbound rules</em> tab and click on <em>Edit inbound rules</em>. You should now see the following screen.</p>
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-sg-edit-inbound-rules.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-sg-edit-inbound-rules.png" alt="Edit inbound rules">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-sg-edit-inbound-rules.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-sg-edit-inbound-rules.png" alt="Edit inbound rules">
     </a>
     <figcaption>Edit inbound rules</figcaption>
   </figure>
@@ -4699,8 +4821,8 @@ OutputValue: <span class="s2">&quot;YOUR_EKS_SECURITY_GROUP_ID&quot;</span>
 <p>Add two rules for HTTP and HTTPS as follows:</p>
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-sg-hopsworks-inbound-rules.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-sg-hopsworks-inbound-rules.png" alt="Edit inbound rules">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-sg-hopsworks-inbound-rules.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-sg-hopsworks-inbound-rules.png" alt="Edit inbound rules">
     </a>
     <figcaption>Edit inbound rules</figcaption>
   </figure>
@@ -4748,8 +4870,8 @@ OutputValue: <span class="s2">&quot;YOUR_EKS_SECURITY_GROUP_ID&quot;</span>
 <p>In Hopsworks.ai, select <em>Create cluster</em>. Choose the region of your EKS cluster and fill in the name of your <a href="../getting_started/#step-3-creating-storage">S3 bucket</a>, then click Next:</p>
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster.png" alt="Create Hopsworks cluster">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster.png" alt="Create Hopsworks cluster">
     </a>
     <figcaption>Create Hopsworks cluster</figcaption>
   </figure>
@@ -4758,8 +4880,8 @@ OutputValue: <span class="s2">&quot;YOUR_EKS_SECURITY_GROUP_ID&quot;</span>
 <p>Choose your preferred <a href="../getting_started/#step-4-create-an-ssh-key">SSH key</a> to use with the cluster, then click Next:</p>
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-0.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-0.png" alt="Choose SSH key">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-0.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-0.png" alt="Choose SSH key">
     </a>
     <figcaption>Choose SSH key</figcaption>
   </figure>
@@ -4768,8 +4890,8 @@ OutputValue: <span class="s2">&quot;YOUR_EKS_SECURITY_GROUP_ID&quot;</span>
 <p>Choose the instance profile role that you have created in <a href="#step-2-create-an-instance-profile-role-on-aws">Step 2</a> (click on the refresh button if your instance profile is not in the list), then click Next:</p>
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-1.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-1.png" alt="Choose instance profile role">
+    <a  href="../../../assets/images/aws/setup_installation/managed/eks-hopsworks-create-cluster-1.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-1.png" alt="Choose instance profile role">
     </a>
     <figcaption>Choose instance profile role</figcaption>
   </figure>
@@ -4778,8 +4900,8 @@ OutputValue: <span class="s2">&quot;YOUR_EKS_SECURITY_GROUP_ID&quot;</span>
 <p>Choose the <a href="../cluster_creation/#step-6-set-the-backup-retention-policy">backup retention period</a> and click Next:</p>
 <p align="center">
   <figure>
-    <a  href="../../assets/images/azure/connect-azure-backup.png">
-      <img style="border: 1px solid #000" src="../../assets/images/azure/connect-azure-backup.png" alt="Choose the backup retention policy">
+    <a  href="../../../assets/images/setup_installation/managed/azure/connect-azure-backup.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/azure/connect-azure-backup.png" alt="Choose the backup retention policy">
     </a>
     <figcaption>Choose the backup retention policy</figcaption>
   </figure>
@@ -4788,8 +4910,8 @@ OutputValue: <span class="s2">&quot;YOUR_EKS_SECURITY_GROUP_ID&quot;</span>
 <p>Choose <strong>Enabled</strong> to enable the use of Amazon EKS and ECR:</p>
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-2.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-2.png" alt="Choose Enabled">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-2.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-2.png" alt="Choose Enabled">
     </a>
     <figcaption>Choose Enabled</figcaption>
   </figure>
@@ -4798,8 +4920,8 @@ OutputValue: <span class="s2">&quot;YOUR_EKS_SECURITY_GROUP_ID&quot;</span>
 <p>Add your EKS cluster name, then click Next:</p>
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-3.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-3.png" alt="Add EKS cluster name">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-3.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-3.png" alt="Add EKS cluster name">
     </a>
     <figcaption>Add EKS cluster name</figcaption>
   </figure>
@@ -4809,8 +4931,8 @@ OutputValue: <span class="s2">&quot;YOUR_EKS_SECURITY_GROUP_ID&quot;</span>
 <p>If you followed option <em>B</em> choose the VPC you created during <a href="#step-4-setup-network-connectivity">Step 4</a>.</p>
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-4.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-4.png" alt="Choose VPC">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-4.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-4.png" alt="Choose VPC">
     </a>
     <figcaption>Choose VPC</figcaption>
   </figure>
@@ -4823,8 +4945,8 @@ OutputValue: <span class="s2">&quot;YOUR_EKS_SECURITY_GROUP_ID&quot;</span>
 </div>
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-5.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-5.png" alt="Choose Subnet">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-5.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-5.png" alt="Choose Subnet">
     </a>
     <figcaption>Choose Subnet</figcaption>
   </figure>
@@ -4837,8 +4959,8 @@ OutputValue: <span class="s2">&quot;YOUR_EKS_SECURITY_GROUP_ID&quot;</span>
 </div>
 <p align="center">
   <figure>
-    <a  href="../../assets/images/aws/eks-hopsworks-create-cluster-6.png">
-      <img style="border: 1px solid #000" src="../../assets/images/aws/eks-hopsworks-create-cluster-6.png" alt="Choose Security Group">
+    <a  href="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-6.png">
+      <img style="border: 1px solid #000" src="../../../assets/images/setup_installation/managed/aws/eks-hopsworks-create-cluster-6.png" alt="Choose Security Group">
     </a>
     <figcaption>Choose Security Group</figcaption>
   </figure>
@@ -4854,6 +4976,41 @@ OutputValue: <span class="s2">&quot;YOUR_EKS_SECURITY_GROUP_ID&quot;</span>
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../cluster_creation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cluster Creation" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Cluster Creation
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../restrictive_permissions/" class="md-footer__link md-footer__link--next" aria-label="Next: Limiting Permissions" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Limiting Permissions
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

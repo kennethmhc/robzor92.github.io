@@ -12,21 +12,21 @@
         <meta name="author" content="Logical Clocks">
       
       
-        <link rel="canonical" href="https://docs.hopsworks.ai/concepts/mlops/opensearch/">
+        <link rel="canonical" href="https://docs.hopsworks.ai/user_guides/projects/kafka/produce_messages/">
       
-      <link rel="icon" href="../../../assets/images/favicon.ico">
+      <link rel="icon" href="../../../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
     
     
       
-        <title>Vector Database - Hopsworks Documentation</title>
+        <title>Produce messages - Hopsworks Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.644de097.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.644de097.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -41,11 +41,11 @@
       
     
     
-      <link rel="stylesheet" href="../../../css/custom.css">
+      <link rel="stylesheet" href="../../../../css/custom.css">
     
-      <link rel="stylesheet" href="../../../css/marctech.css">
+      <link rel="stylesheet" href="../../../../css/marctech.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#how-to-produce-to-a-topic" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -90,9 +95,9 @@
 
 <header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="Hopsworks Documentation" class="md-header__button md-logo" aria-label="Hopsworks Documentation" data-md-component="logo">
+    <a href="../../../.." title="Hopsworks Documentation" class="md-header__button md-logo" aria-label="Hopsworks Documentation" data-md-component="logo">
       
-  <img src="../../../assets/images/hops-logo.png" alt="logo">
+  <img src="../../../../assets/images/hops-logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -108,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Vector Database
+              Produce messages
             
           </span>
         </div>
@@ -177,7 +182,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../.." class="md-tabs__link">
+    <a href="../../../.." class="md-tabs__link">
       🏠 Home
     </a>
   </li>
@@ -197,12 +202,28 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../getting_started/fs/index.md" class="md-tabs__link">
+      <a href="../../../../getting_started/fs/index.md" class="md-tabs__link">
         Getting Started
       </a>
     </li>
   
 
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../concepts/hopsworks/" class="md-tabs__link">
+        Concepts
+      </a>
+    </li>
   
 
       
@@ -217,23 +238,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../hopsworks/" class="md-tabs__link md-tabs__link--active">
-        Concepts
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../user_guides/" class="md-tabs__link">
+      <a href="../../../" class="md-tabs__link md-tabs__link--active">
         Guides
       </a>
     </li>
@@ -254,7 +259,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../setup_installation/aws/getting_started/" class="md-tabs__link">
+      <a href="../../../../setup_installation/aws/getting_started/" class="md-tabs__link">
         Setup and Installation
       </a>
     </li>
@@ -272,7 +277,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../admin/" class="md-tabs__link">
+      <a href="../../../../admin/" class="md-tabs__link">
         Administration
       </a>
     </li>
@@ -285,7 +290,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../../../reference_guides/" class="md-tabs__link">
+    <a href="../../../../reference_guides/" class="md-tabs__link">
       API
     </a>
   </li>
@@ -330,9 +335,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Hopsworks Documentation" class="md-nav__button md-logo" aria-label="Hopsworks Documentation" data-md-component="logo">
+    <a href="../../../.." title="Hopsworks Documentation" class="md-nav__button md-logo" aria-label="Hopsworks Documentation" data-md-component="logo">
       
-  <img src="../../../assets/images/hops-logo.png" alt="logo">
+  <img src="../../../../assets/images/hops-logo.png" alt="logo">
 
     </a>
     Hopsworks Documentation
@@ -360,7 +365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../../../.." class="md-nav__link">
         🏠 Home
       </a>
     </li>
@@ -439,7 +444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting_started/fs/index.md" class="md-nav__link">
+      <a href="../../../../getting_started/fs/index.md" class="md-nav__link">
         Quickstart
       </a>
     </li>
@@ -483,7 +488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../getting_started/fs/tutorials/aml/" class="md-nav__link">
+      <a href="../../../../getting_started/fs/tutorials/aml/" class="md-nav__link">
         AML Tutorial
       </a>
     </li>
@@ -517,14 +522,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -559,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../hopsworks/" class="md-nav__link">
+      <a href="../../../../concepts/hopsworks/" class="md-nav__link">
         Hopsworks Platform
       </a>
     </li>
@@ -596,7 +599,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../fs/">Feature Store</a>
+          <a href="../../../../concepts/fs/">Feature Store</a>
           
             <label for="__nav_3_2">
               <span class="md-nav__icon md-icon"></span>
@@ -659,7 +662,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fs/feature_group/fg_overview/" class="md-nav__link">
+      <a href="../../../../concepts/fs/feature_group/fg_overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -673,7 +676,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fs/feature_group/write_apis/" class="md-nav__link">
+      <a href="../../../../concepts/fs/feature_group/write_apis/" class="md-nav__link">
         Write APIs
       </a>
     </li>
@@ -687,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fs/feature_group/feature_pipelines/" class="md-nav__link">
+      <a href="../../../../concepts/fs/feature_group/feature_pipelines/" class="md-nav__link">
         Feature Pipelines
       </a>
     </li>
@@ -701,7 +704,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fs/feature_group/external_fg/" class="md-nav__link">
+      <a href="../../../../concepts/fs/feature_group/external_fg/" class="md-nav__link">
         External Feature Groups
       </a>
     </li>
@@ -715,7 +718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fs/feature_group/fg_statistics/" class="md-nav__link">
+      <a href="../../../../concepts/fs/feature_group/fg_statistics/" class="md-nav__link">
         Feature Validation/Statistics
       </a>
     </li>
@@ -729,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fs/feature_group/versioning/" class="md-nav__link">
+      <a href="../../../../concepts/fs/feature_group/versioning/" class="md-nav__link">
         Versioning
       </a>
     </li>
@@ -790,7 +793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fs/feature_view/fv_overview/" class="md-nav__link">
+      <a href="../../../../concepts/fs/feature_view/fv_overview/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -804,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fs/feature_view/training_data/" class="md-nav__link">
+      <a href="../../../../concepts/fs/feature_view/training_data/" class="md-nav__link">
         Training Data
       </a>
     </li>
@@ -818,7 +821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fs/feature_view/transformations/" class="md-nav__link">
+      <a href="../../../../concepts/fs/feature_view/transformations/" class="md-nav__link">
         Consistent Transformations
       </a>
     </li>
@@ -832,7 +835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fs/feature_view/online_api/" class="md-nav__link">
+      <a href="../../../../concepts/fs/feature_view/online_api/" class="md-nav__link">
         Online API
       </a>
     </li>
@@ -846,7 +849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fs/feature_view/statistics/" class="md-nav__link">
+      <a href="../../../../concepts/fs/feature_view/statistics/" class="md-nav__link">
         Statistics
       </a>
     </li>
@@ -860,7 +863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../fs/feature_view/versioning/" class="md-nav__link">
+      <a href="../../../../concepts/fs/feature_view/versioning/" class="md-nav__link">
         Versioning
       </a>
     </li>
@@ -924,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/governance/" class="md-nav__link">
+      <a href="../../../../concepts/projects/governance/" class="md-nav__link">
         Governance
       </a>
     </li>
@@ -938,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/storage/" class="md-nav__link">
+      <a href="../../../../concepts/projects/storage/" class="md-nav__link">
         Data Storage/Sharing
       </a>
     </li>
@@ -952,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/cicd/" class="md-nav__link">
+      <a href="../../../../concepts/projects/cicd/" class="md-nav__link">
         CI/CD
       </a>
     </li>
@@ -971,16 +974,14 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
       
       
       
@@ -1013,7 +1014,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../flywheel/" class="md-nav__link">
+      <a href="../../../../concepts/mlops/flywheel/" class="md-nav__link">
         MLOps Flywheel
       </a>
     </li>
@@ -1027,7 +1028,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../registry/" class="md-nav__link">
+      <a href="../../../../concepts/mlops/registry/" class="md-nav__link">
         Model Registry
       </a>
     </li>
@@ -1041,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kserve/" class="md-nav__link">
+      <a href="../../../../concepts/mlops/kserve/" class="md-nav__link">
         Model Serving
       </a>
     </li>
@@ -1053,19 +1054,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../concepts/mlops/opensearch/" class="md-nav__link">
         Vector Database
       </a>
-      
     </li>
   
 
@@ -1118,7 +1111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/outside/" class="md-nav__link">
+      <a href="../../../../concepts/dev/outside/" class="md-nav__link">
         Outside Hopsworks
       </a>
     </li>
@@ -1132,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/inside/" class="md-nav__link">
+      <a href="../../../../concepts/dev/inside/" class="md-nav__link">
         Inside Hopsworks
       </a>
     </li>
@@ -1159,12 +1152,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
       
       
@@ -1186,7 +1181,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../user_guides/">Guides</a>
+          <a href="../../../">Guides</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -1236,7 +1231,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../user_guides/fs/">Feature Store</a>
+          <a href="../../../fs/">Feature Store</a>
           
             <label for="__nav_4_2">
               <span class="md-nav__icon md-icon"></span>
@@ -1280,7 +1275,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../user_guides/fs/storage_connector/">Storage Connector</a>
+          <a href="../../../fs/storage_connector/">Storage Connector</a>
           
             <label for="__nav_4_2_2">
               <span class="md-nav__icon md-icon"></span>
@@ -1349,7 +1344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/storage_connector/creation/jdbc/" class="md-nav__link">
+      <a href="../../../fs/storage_connector/creation/jdbc/" class="md-nav__link">
         JDBC
       </a>
     </li>
@@ -1363,7 +1358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/storage_connector/creation/snowflake/" class="md-nav__link">
+      <a href="../../../fs/storage_connector/creation/snowflake/" class="md-nav__link">
         Snowflake
       </a>
     </li>
@@ -1377,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/storage_connector/creation/kafka/" class="md-nav__link">
+      <a href="../../../fs/storage_connector/creation/kafka/" class="md-nav__link">
         Kafka
       </a>
     </li>
@@ -1391,7 +1386,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/storage_connector/creation/hopsfs/" class="md-nav__link">
+      <a href="../../../fs/storage_connector/creation/hopsfs/" class="md-nav__link">
         HopsFS
       </a>
     </li>
@@ -1405,7 +1400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/storage_connector/creation/s3/" class="md-nav__link">
+      <a href="../../../fs/storage_connector/creation/s3/" class="md-nav__link">
         S3
       </a>
     </li>
@@ -1419,7 +1414,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/storage_connector/creation/redshift/" class="md-nav__link">
+      <a href="../../../fs/storage_connector/creation/redshift/" class="md-nav__link">
         Redshift
       </a>
     </li>
@@ -1433,7 +1428,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/storage_connector/creation/adls/" class="md-nav__link">
+      <a href="../../../fs/storage_connector/creation/adls/" class="md-nav__link">
         ADLS
       </a>
     </li>
@@ -1447,7 +1442,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/storage_connector/creation/bigquery/" class="md-nav__link">
+      <a href="../../../fs/storage_connector/creation/bigquery/" class="md-nav__link">
         BigQuery
       </a>
     </li>
@@ -1461,7 +1456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/storage_connector/creation/gcs/" class="md-nav__link">
+      <a href="../../../fs/storage_connector/creation/gcs/" class="md-nav__link">
         GCS
       </a>
     </li>
@@ -1482,7 +1477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/storage_connector/usage/" class="md-nav__link">
+      <a href="../../../fs/storage_connector/usage/" class="md-nav__link">
         Usage
       </a>
     </li>
@@ -1528,7 +1523,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../user_guides/fs/feature_group/">Feature Group</a>
+          <a href="../../../fs/feature_group/">Feature Group</a>
           
             <label for="__nav_4_2_3">
               <span class="md-nav__icon md-icon"></span>
@@ -1551,7 +1546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/feature_group/create/" class="md-nav__link">
+      <a href="../../../fs/feature_group/create/" class="md-nav__link">
         Create
       </a>
     </li>
@@ -1565,7 +1560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/feature_group/create_external/" class="md-nav__link">
+      <a href="../../../fs/feature_group/create_external/" class="md-nav__link">
         Create External
       </a>
     </li>
@@ -1579,7 +1574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/feature_group/data_types/" class="md-nav__link">
+      <a href="../../../fs/feature_group/data_types/" class="md-nav__link">
         Data Types and Schema management
       </a>
     </li>
@@ -1593,7 +1588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/feature_group/statistics/" class="md-nav__link">
+      <a href="../../../fs/feature_group/statistics/" class="md-nav__link">
         Statistics
       </a>
     </li>
@@ -1643,7 +1638,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../user_guides/fs/feature_view/">Feature View</a>
+          <a href="../../../fs/feature_view/">Feature View</a>
           
             <label for="__nav_4_2_4">
               <span class="md-nav__icon md-icon"></span>
@@ -1666,7 +1661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/dummy/" class="md-nav__link">
+      <a href="../../../fs/dummy/" class="md-nav__link">
         Overview
       </a>
     </li>
@@ -1680,7 +1675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/dummy/" class="md-nav__link">
+      <a href="../../../fs/dummy/" class="md-nav__link">
         Query
       </a>
     </li>
@@ -1694,7 +1689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/dummy/" class="md-nav__link">
+      <a href="../../../fs/dummy/" class="md-nav__link">
         Batch data
       </a>
     </li>
@@ -1708,7 +1703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/dummy/" class="md-nav__link">
+      <a href="../../../fs/dummy/" class="md-nav__link">
         Online vectors
       </a>
     </li>
@@ -1722,7 +1717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/dummy/" class="md-nav__link">
+      <a href="../../../fs/dummy/" class="md-nav__link">
         Training data
       </a>
     </li>
@@ -1736,7 +1731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/dummy/" class="md-nav__link">
+      <a href="../../../fs/dummy/" class="md-nav__link">
         Transformation Functions
       </a>
     </li>
@@ -1757,7 +1752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/fs/dummy/" class="md-nav__link">
+      <a href="../../../fs/dummy/" class="md-nav__link">
         Tags and Keywords
       </a>
     </li>
@@ -1801,7 +1796,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../user_guides/ml/">Models</a>
+          <a href="../../../ml/">Models</a>
           
             <label for="__nav_4_3">
               <span class="md-nav__icon md-icon"></span>
@@ -1847,7 +1842,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../user_guides/ml/model/">Model</a>
+          <a href="../../../ml/model/">Model</a>
           
             <label for="__nav_4_3_2">
               <span class="md-nav__icon md-icon"></span>
@@ -1906,7 +1901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/model/frameworks/tf.md" class="md-nav__link">
+      <a href="../../../ml/model/frameworks/tf.md" class="md-nav__link">
         TensorFlow
       </a>
     </li>
@@ -1920,7 +1915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/model/frameworks/skl.md" class="md-nav__link">
+      <a href="../../../ml/model/frameworks/skl.md" class="md-nav__link">
         Scikit-Learn
       </a>
     </li>
@@ -1934,7 +1929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/model/frameworks/torch.md" class="md-nav__link">
+      <a href="../../../ml/model/frameworks/torch.md" class="md-nav__link">
         PyTorch
       </a>
     </li>
@@ -1948,7 +1943,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/model/frameworks/torch.md" class="md-nav__link">
+      <a href="../../../ml/model/frameworks/torch.md" class="md-nav__link">
         Python
       </a>
     </li>
@@ -1969,7 +1964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/model/schema.md" class="md-nav__link">
+      <a href="../../../ml/model/schema.md" class="md-nav__link">
         Model Schema
       </a>
     </li>
@@ -1983,7 +1978,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/model/input.md" class="md-nav__link">
+      <a href="../../../ml/model/input.md" class="md-nav__link">
         Input Example
       </a>
     </li>
@@ -2033,7 +2028,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../user_guides/ml/deployment/">Deployment</a>
+          <a href="../../../ml/deployment/">Deployment</a>
           
             <label for="__nav_4_3_3">
               <span class="md-nav__icon md-icon"></span>
@@ -2092,7 +2087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/model/frameworks/tf.md" class="md-nav__link">
+      <a href="../../../ml/model/frameworks/tf.md" class="md-nav__link">
         TensorFlow
       </a>
     </li>
@@ -2106,7 +2101,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/model/frameworks/skl.md" class="md-nav__link">
+      <a href="../../../ml/model/frameworks/skl.md" class="md-nav__link">
         Scikit-Learn
       </a>
     </li>
@@ -2120,7 +2115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/model/frameworks/torch.md" class="md-nav__link">
+      <a href="../../../ml/model/frameworks/torch.md" class="md-nav__link">
         PyTorch
       </a>
     </li>
@@ -2134,7 +2129,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/model/frameworks/torch.md" class="md-nav__link">
+      <a href="../../../ml/model/frameworks/torch.md" class="md-nav__link">
         Python
       </a>
     </li>
@@ -2155,7 +2150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/deployment/predictor.md" class="md-nav__link">
+      <a href="../../../ml/deployment/predictor.md" class="md-nav__link">
         Custom Predictor
       </a>
     </li>
@@ -2169,7 +2164,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/deployment/transformer.md" class="md-nav__link">
+      <a href="../../../ml/deployment/transformer.md" class="md-nav__link">
         Transformer
       </a>
     </li>
@@ -2183,7 +2178,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/deployment/transformer.md" class="md-nav__link">
+      <a href="../../../ml/deployment/transformer.md" class="md-nav__link">
         Resource Configuration
       </a>
     </li>
@@ -2197,7 +2192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/deployment/transformer.md" class="md-nav__link">
+      <a href="../../../ml/deployment/transformer.md" class="md-nav__link">
         Inference Logger
       </a>
     </li>
@@ -2211,7 +2206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/deployment/transformer.md" class="md-nav__link">
+      <a href="../../../ml/deployment/transformer.md" class="md-nav__link">
         Inference Batcher
       </a>
     </li>
@@ -2283,7 +2278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../integrations/dummy.md" class="md-nav__link">
+      <a href="../../../../integrations/dummy.md" class="md-nav__link">
         Python
       </a>
     </li>
@@ -2297,7 +2292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../integrations/dummy.md" class="md-nav__link">
+      <a href="../../../../integrations/dummy.md" class="md-nav__link">
         Databricks
       </a>
     </li>
@@ -2311,7 +2306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../integrations/dummy.md" class="md-nav__link">
+      <a href="../../../../integrations/dummy.md" class="md-nav__link">
         AWS Sagemaker
       </a>
     </li>
@@ -2325,7 +2320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../integrations/dummy.md" class="md-nav__link">
+      <a href="../../../../integrations/dummy.md" class="md-nav__link">
         AWS EMR
       </a>
     </li>
@@ -2339,7 +2334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../integrations/dummy.md" class="md-nav__link">
+      <a href="../../../../integrations/dummy.md" class="md-nav__link">
         Azure HDInsight
       </a>
     </li>
@@ -2353,7 +2348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../integrations/dummy.md" class="md-nav__link">
+      <a href="../../../../integrations/dummy.md" class="md-nav__link">
         Azure Machine Learning
       </a>
     </li>
@@ -2367,7 +2362,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../integrations/dummy.md" class="md-nav__link">
+      <a href="../../../../integrations/dummy.md" class="md-nav__link">
         Apache Spark
       </a>
     </li>
@@ -2386,14 +2381,16 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" type="checkbox" id="__nav_4_5" checked>
       
       
       
@@ -2446,7 +2443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/dummy/" class="md-nav__link">
+      <a href="../../dummy/" class="md-nav__link">
         Authentication
       </a>
     </li>
@@ -2492,7 +2489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/project/create_project/" class="md-nav__link">
+      <a href="../../project/create_project/" class="md-nav__link">
         Create Project
       </a>
     </li>
@@ -2506,7 +2503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/project/add_members/" class="md-nav__link">
+      <a href="../../project/add_members/" class="md-nav__link">
         Add Members
       </a>
     </li>
@@ -2597,7 +2594,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/python/python_install/" class="md-nav__link">
+      <a href="../../python/python_install/" class="md-nav__link">
         Git source
       </a>
     </li>
@@ -2611,7 +2608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/python/python_install/" class="md-nav__link">
+      <a href="../../python/python_install/" class="md-nav__link">
         pip
       </a>
     </li>
@@ -2625,7 +2622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/python/python_install/" class="md-nav__link">
+      <a href="../../python/python_install/" class="md-nav__link">
         conda
       </a>
     </li>
@@ -2639,7 +2636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/python/python_install/" class="md-nav__link">
+      <a href="../../python/python_install/" class="md-nav__link">
         distribution
       </a>
     </li>
@@ -2660,7 +2657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/python/python_env_export/" class="md-nav__link">
+      <a href="../../python/python_env_export/" class="md-nav__link">
         Export environment
       </a>
     </li>
@@ -2674,7 +2671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/python/python_env_recreate/" class="md-nav__link">
+      <a href="../../python/python_env_recreate/" class="md-nav__link">
         Recreate environment
       </a>
     </li>
@@ -2727,7 +2724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/jupyter/spark_notebook/" class="md-nav__link">
+      <a href="../../jupyter/spark_notebook/" class="md-nav__link">
         Run Spark Notebook
       </a>
     </li>
@@ -2741,7 +2738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/jupyter/python_notebook/" class="md-nav__link">
+      <a href="../../jupyter/python_notebook/" class="md-nav__link">
         Run Python Notebook
       </a>
     </li>
@@ -2798,7 +2795,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/jobs/pyspark_job/" class="md-nav__link">
+      <a href="../../jobs/pyspark_job/" class="md-nav__link">
         Run PySpark Job
       </a>
     </li>
@@ -2812,7 +2809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/jobs/spark_job/" class="md-nav__link">
+      <a href="../../jobs/spark_job/" class="md-nav__link">
         Run Spark Job
       </a>
     </li>
@@ -2826,7 +2823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/jobs/python_job/" class="md-nav__link">
+      <a href="../../jobs/python_job/" class="md-nav__link">
         Run Python Job
       </a>
     </li>
@@ -2840,7 +2837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/jobs/alert/" class="md-nav__link">
+      <a href="../../jobs/alert/" class="md-nav__link">
         Alerts
       </a>
     </li>
@@ -2893,7 +2890,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/opensearch/connect/" class="md-nav__link">
+      <a href="../../opensearch/connect/" class="md-nav__link">
         Connect
       </a>
     </li>
@@ -2907,7 +2904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/opensearch/vector_database/" class="md-nav__link">
+      <a href="../../opensearch/vector_database/" class="md-nav__link">
         Vector Database
       </a>
     </li>
@@ -2928,7 +2925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/dummy/" class="md-nav__link">
+      <a href="../../dummy/" class="md-nav__link">
         Airflow
       </a>
     </li>
@@ -2940,12 +2937,14 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5_8" type="checkbox" id="__nav_4_5_8" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5_8" type="checkbox" id="__nav_4_5_8" checked>
       
       
       
@@ -2978,7 +2977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/kafka/create_schema/" class="md-nav__link">
+      <a href="../create_schema/" class="md-nav__link">
         Create Schema
       </a>
     </li>
@@ -2992,7 +2991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/kafka/create_topic/" class="md-nav__link">
+      <a href="../create_topic/" class="md-nav__link">
         Create Topic
       </a>
     </li>
@@ -3004,11 +3003,107 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../user_guides/projects/kafka/produce_messages/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Produce messages
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Produce messages
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-get-the-kafka-api" class="md-nav__link">
+    Step 1: Get the Kafka API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-configure-confluent-kafka-client" class="md-nav__link">
+    Step 2: Configure confluent-kafka client
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-produce-messages-to-topic" class="md-nav__link">
+    Step 3: Produce messages to topic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-reference" class="md-nav__link">
+    API Reference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3020,7 +3115,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/kafka/consume_messages/" class="md-nav__link">
+      <a href="../consume_messages/" class="md-nav__link">
         Consume messages
       </a>
     </li>
@@ -3073,7 +3168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/git/configure_git_provider/" class="md-nav__link">
+      <a href="../../git/configure_git_provider/" class="md-nav__link">
         Configure Git Provider
       </a>
     </li>
@@ -3087,7 +3182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/git/clone_repo/" class="md-nav__link">
+      <a href="../../git/clone_repo/" class="md-nav__link">
         Clone Repository
       </a>
     </li>
@@ -3138,7 +3233,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/secrets/create_secret/" class="md-nav__link">
+      <a href="../../secrets/create_secret/" class="md-nav__link">
         Create Secret
       </a>
     </li>
@@ -3189,7 +3284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/api_key/create_api_key/" class="md-nav__link">
+      <a href="../../api_key/create_api_key/" class="md-nav__link">
         Create API Key
       </a>
     </li>
@@ -3210,7 +3305,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/iam_role/iam_role_chaining/" class="md-nav__link">
+      <a href="../../iam_role/iam_role_chaining/" class="md-nav__link">
         AWS IAM Roles
       </a>
     </li>
@@ -3224,7 +3319,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/dummy/" class="md-nav__link">
+      <a href="../../dummy/" class="md-nav__link">
         Search
       </a>
     </li>
@@ -3238,7 +3333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/projects/dummy/" class="md-nav__link">
+      <a href="../../dummy/" class="md-nav__link">
         Hops File System (HopsFS)
       </a>
     </li>
@@ -3345,7 +3440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/aws/getting_started/" class="md-nav__link">
+      <a href="../../../../setup_installation/aws/getting_started/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -3359,7 +3454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/aws/cluster_creation/" class="md-nav__link">
+      <a href="../../../../setup_installation/aws/cluster_creation/" class="md-nav__link">
         Cluster Creation
       </a>
     </li>
@@ -3373,7 +3468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/aws/eks_ecr_integration/" class="md-nav__link">
+      <a href="../../../../setup_installation/aws/eks_ecr_integration/" class="md-nav__link">
         EKS/ECR integration
       </a>
     </li>
@@ -3387,7 +3482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/aws/restrictive_permissions/" class="md-nav__link">
+      <a href="../../../../setup_installation/aws/restrictive_permissions/" class="md-nav__link">
         Limiting Permissions
       </a>
     </li>
@@ -3433,7 +3528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/aws/upgrade_2.4/" class="md-nav__link">
+      <a href="../../../../setup_installation/aws/upgrade_2.4/" class="md-nav__link">
         Version 2.4 or newer
       </a>
     </li>
@@ -3447,7 +3542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/aws/upgrade/" class="md-nav__link">
+      <a href="../../../../setup_installation/aws/upgrade/" class="md-nav__link">
         Version 2.2 or older
       </a>
     </li>
@@ -3515,7 +3610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/azure/getting_started/" class="md-nav__link">
+      <a href="../../../../setup_installation/azure/getting_started/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -3529,7 +3624,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/azure/cluster_creation/" class="md-nav__link">
+      <a href="../../../../setup_installation/azure/cluster_creation/" class="md-nav__link">
         Cluster Creation
       </a>
     </li>
@@ -3543,7 +3638,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/azure/aks_acr_integration/" class="md-nav__link">
+      <a href="../../../../setup_installation/azure/aks_acr_integration/" class="md-nav__link">
         AKS/ACR integration
       </a>
     </li>
@@ -3557,7 +3652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/azure/restrictive_permissions/" class="md-nav__link">
+      <a href="../../../../setup_installation/azure/restrictive_permissions/" class="md-nav__link">
         Limiting Permissions
       </a>
     </li>
@@ -3603,7 +3698,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/azure/upgrade_2.4/" class="md-nav__link">
+      <a href="../../../../setup_installation/azure/upgrade_2.4/" class="md-nav__link">
         Version 2.4 or newer
       </a>
     </li>
@@ -3617,7 +3712,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/azure/upgrade/" class="md-nav__link">
+      <a href="../../../../setup_installation/azure/upgrade/" class="md-nav__link">
         Version 2.2 or older
       </a>
     </li>
@@ -3681,7 +3776,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/gcp/getting_started/" class="md-nav__link">
+      <a href="../../../../setup_installation/gcp/getting_started/" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -3695,7 +3790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/gcp/cluster_creation/" class="md-nav__link">
+      <a href="../../../../setup_installation/gcp/cluster_creation/" class="md-nav__link">
         Cluster Creation
       </a>
     </li>
@@ -3709,7 +3804,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/gcp/restrictive_permissions/" class="md-nav__link">
+      <a href="../../../../setup_installation/gcp/restrictive_permissions/" class="md-nav__link">
         Limiting Permissions
       </a>
     </li>
@@ -3780,7 +3875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/common/services/" class="md-nav__link">
+      <a href="../../../../setup_installation/common/services/" class="md-nav__link">
         Services
       </a>
     </li>
@@ -3794,7 +3889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/common/adding_removing_workers/" class="md-nav__link">
+      <a href="../../../../setup_installation/common/adding_removing_workers/" class="md-nav__link">
         Adding and Removing workers
       </a>
     </li>
@@ -3808,7 +3903,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/common/autoscaling/" class="md-nav__link">
+      <a href="../../../../setup_installation/common/autoscaling/" class="md-nav__link">
         Autoscaling
       </a>
     </li>
@@ -3822,7 +3917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/common/scalingup/" class="md-nav__link">
+      <a href="../../../../setup_installation/common/scalingup/" class="md-nav__link">
         Scaling up
       </a>
     </li>
@@ -3836,7 +3931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/common/gpu_support/" class="md-nav__link">
+      <a href="../../../../setup_installation/common/gpu_support/" class="md-nav__link">
         GPU support
       </a>
     </li>
@@ -3850,7 +3945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/common/user_management/" class="md-nav__link">
+      <a href="../../../../setup_installation/common/user_management/" class="md-nav__link">
         User management
       </a>
     </li>
@@ -3864,7 +3959,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/common/rondb/" class="md-nav__link">
+      <a href="../../../../setup_installation/common/rondb/" class="md-nav__link">
         Managed RonDB
       </a>
     </li>
@@ -3942,7 +4037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/common/sso/oauth/" class="md-nav__link">
+      <a href="../../../../setup_installation/common/sso/oauth/" class="md-nav__link">
         OAuth2
       </a>
     </li>
@@ -3956,7 +4051,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/common/sso/ldap/" class="md-nav__link">
+      <a href="../../../../setup_installation/common/sso/ldap/" class="md-nav__link">
         LDAP
       </a>
     </li>
@@ -3977,7 +4072,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/common/sso/sso/" class="md-nav__link">
+      <a href="../../../../setup_installation/common/sso/sso/" class="md-nav__link">
         Hopsworks.ai
       </a>
     </li>
@@ -3998,7 +4093,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/common/api_key/" class="md-nav__link">
+      <a href="../../../../setup_installation/common/api_key/" class="md-nav__link">
         API Key
       </a>
     </li>
@@ -4012,7 +4107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/common/terraform/" class="md-nav__link">
+      <a href="../../../../setup_installation/common/terraform/" class="md-nav__link">
         Terraform
       </a>
     </li>
@@ -4065,7 +4160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../setup_installation/on_prem/hopsworks_installer/" class="md-nav__link">
+      <a href="../../../../setup_installation/on_prem/hopsworks_installer/" class="md-nav__link">
         Hopsworks Installer
       </a>
     </li>
@@ -4127,7 +4222,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../admin/">Administration</a>
+          <a href="../../../../admin/">Administration</a>
           
             <label for="__nav_6">
               <span class="md-nav__icon md-icon"></span>
@@ -4186,7 +4281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../admin/auth/" class="md-nav__link">
+      <a href="../../../../admin/auth/" class="md-nav__link">
         Configure Authentication
       </a>
     </li>
@@ -4234,7 +4329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../admin/oauth2/create-client/" class="md-nav__link">
+      <a href="../../../../admin/oauth2/create-client/" class="md-nav__link">
         Register an Identity Provider
       </a>
     </li>
@@ -4248,7 +4343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../admin/oauth2/create-okta-client/" class="md-nav__link">
+      <a href="../../../../admin/oauth2/create-okta-client/" class="md-nav__link">
         Create Okta Client
       </a>
     </li>
@@ -4262,7 +4357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../admin/oauth2/create-azure-client/" class="md-nav__link">
+      <a href="../../../../admin/oauth2/create-azure-client/" class="md-nav__link">
         Create Azure Client
       </a>
     </li>
@@ -4317,7 +4412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../admin/ldap/configure-ldap/" class="md-nav__link">
+      <a href="../../../../admin/ldap/configure-ldap/" class="md-nav__link">
         Configure LDAP
       </a>
     </li>
@@ -4331,7 +4426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../admin/ldap/configure-krb/" class="md-nav__link">
+      <a href="../../../../admin/ldap/configure-krb/" class="md-nav__link">
         Configure Kerberos
       </a>
     </li>
@@ -4345,7 +4440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../admin/ldap/configure-server/" class="md-nav__link">
+      <a href="../../../../admin/ldap/configure-server/" class="md-nav__link">
         Configure server for LDAP and Kerberos
       </a>
     </li>
@@ -4373,7 +4468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/dummy.md" class="md-nav__link">
+      <a href="../../../../administration/dummy.md" class="md-nav__link">
         Project management
       </a>
     </li>
@@ -4387,7 +4482,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../admin/user/" class="md-nav__link">
+      <a href="../../../../admin/user/" class="md-nav__link">
         User Management
       </a>
     </li>
@@ -4401,7 +4496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../admin/alert/" class="md-nav__link">
+      <a href="../../../../admin/alert/" class="md-nav__link">
         Configure Alerts
       </a>
     </li>
@@ -4415,7 +4510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../admin/services/" class="md-nav__link">
+      <a href="../../../../admin/services/" class="md-nav__link">
         Manage Services
       </a>
     </li>
@@ -4429,7 +4524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/dummy.md" class="md-nav__link">
+      <a href="../../../../administration/dummy.md" class="md-nav__link">
         Tags
       </a>
     </li>
@@ -4443,7 +4538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../administration/dummy.md" class="md-nav__link">
+      <a href="../../../../administration/dummy.md" class="md-nav__link">
         Monitoring
       </a>
     </li>
@@ -4457,7 +4552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../admin/roleChaining/" class="md-nav__link">
+      <a href="../../../../admin/roleChaining/" class="md-nav__link">
         IAM Role Chaining
       </a>
     </li>
@@ -4479,7 +4574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../reference_guides/" class="md-nav__link">
+      <a href="../../../../reference_guides/" class="md-nav__link">
         API
       </a>
     </li>
@@ -4508,6 +4603,94 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-get-the-kafka-api" class="md-nav__link">
+    Step 1: Get the Kafka API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-configure-confluent-kafka-client" class="md-nav__link">
+    Step 2: Configure confluent-kafka client
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-produce-messages-to-topic" class="md-nav__link">
+    Step 3: Produce messages to topic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-reference" class="md-nav__link">
+    API Reference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -4515,12 +4698,44 @@
                 
 
 
-  <h1>Vector Database</h1>
+<h1 id="how-to-produce-to-a-topic">How To Produce To A Topic<a class="headerlink" href="#how-to-produce-to-a-topic" title="Permanent link">#</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h2>
+<p>A Producer is a process which produces messages to a kafka topic.</p>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">#</a></h2>
+<p>This guide requires that you have previously created a <a href="../create_topic/">Kafka Topic</a>.</p>
+<h2 id="code">Code<a class="headerlink" href="#code" title="Permanent link">#</a></h2>
+<p>In this guide, you will learn how to produce messages to a kafka topic.</p>
+<h3 id="step-1-get-the-kafka-api">Step 1: Get the Kafka API<a class="headerlink" href="#step-1-get-the-kafka-api" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">hopsworks</span>
 
-<p>Hopsworks includes OpenSearch as a multi-tenant service in projects.
-OpenSearch provides vector database capabilities throught its k-NN plugin, that supports the FAISS and nsmlib embedding indexes.
-Through Hopsworks, OpenSearch also provides enterprise capabilities, including authentication and access control to indexes (an index can be private to a Hopsworks project), filtering, scalability, high availability, and disaster recovery support.</p>
-<p><img src="/assets/images/concepts/mlops/opensearch-knn.svg"></p>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">hopsworks</span><span class="o">.</span><span class="n">connection</span><span class="p">()</span>
+
+<span class="n">project</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">get_project</span><span class="p">()</span>
+
+<span class="n">kafka_api</span> <span class="o">=</span> <span class="n">project</span><span class="o">.</span><span class="n">get_kafka_api</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="step-2-configure-confluent-kafka-client">Step 2: Configure confluent-kafka client<a class="headerlink" href="#step-2-configure-confluent-kafka-client" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">producer_config</span> <span class="o">=</span> <span class="n">kafka_api</span><span class="o">.</span><span class="n">get_default_config</span><span class="p">()</span>
+
+<span class="kn">from</span> <span class="nn">confluent_kafka</span> <span class="kn">import</span> <span class="n">Producer</span>
+
+<span class="n">producer</span> <span class="o">=</span> <span class="n">Producer</span><span class="p">(</span><span class="n">producer_config</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="step-3-produce-messages-to-topic">Step 3: Produce messages to topic<a class="headerlink" href="#step-3-produce-messages-to-topic" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">uuid</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="c1"># Send a few messages</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="n">producer</span><span class="o">.</span><span class="n">produce</span><span class="p">(</span><span class="s2">&quot;my_topic&quot;</span><span class="p">,</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid1</span><span class="p">())}),</span> <span class="s2">&quot;key&quot;</span><span class="p">)</span>
+
+<span class="c1"># Trigger the sending of all messages to the brokers, 10 sec timeout</span>
+<span class="n">producer</span><span class="o">.</span><span class="n">flush</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="api-reference">API Reference<a class="headerlink" href="#api-reference" title="Permanent link">#</a></h3>
+<p><a href="https://docs.hopsworks.ai/hopsworks-api/dev/generated/api/kafka_topic/">KafkaTopic</a></p>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">#</a></h2>
+<p>In this guide you learned how to produce messages to a Kafka Topic. Next step is to create a <a href="../consume_messages/">Consumer</a> to read the messages from the topic.</p>
 
               
             </article>
@@ -4534,7 +4749,7 @@ Through Hopsworks, OpenSearch also provides enterprise capabilities, including a
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../kserve/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Model Serving" rel="prev">
+        <a href="../create_topic/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Create Topic" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -4543,20 +4758,20 @@ Through Hopsworks, OpenSearch also provides enterprise capabilities, including a
               <span class="md-footer__direction">
                 Previous
               </span>
-              Model Serving
+              Create Topic
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../dev/outside/" class="md-footer__link md-footer__link--next" aria-label="Next: Outside Hopsworks" rel="next">
+        <a href="../consume_messages/" class="md-footer__link md-footer__link--next" aria-label="Next: Consume messages" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Outside Hopsworks
+              Consume messages
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -4621,10 +4836,10 @@ Through Hopsworks, OpenSearch also provides enterprise capabilities, including a
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.indexes"], "search": "../../../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c44cc438.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c44cc438.min.js"></script>
       
     
   </body>

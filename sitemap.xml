@@ -486,12 +486,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.hopsworks.ai/user_guides/ml/</loc>
+         <lastmod>2022-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.hopsworks.ai/user_guides/ml/dummy/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.hopsworks.ai/user_guides/ml/deployment/</loc>
+         <lastmod>2022-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.hopsworks.ai/user_guides/ml/deployment/dummy/</loc>
+         <lastmod>2022-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.hopsworks.ai/user_guides/ml/model/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -556,12 +571,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.hopsworks.ai/user_guides/projects/kafka/consume_messages/</loc>
+         <lastmod>2022-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.hopsworks.ai/user_guides/projects/kafka/create_schema/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.hopsworks.ai/user_guides/projects/kafka/create_topic/</loc>
+         <lastmod>2022-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.hopsworks.ai/user_guides/projects/kafka/produce_messages/</loc>
          <lastmod>2022-06-15</lastmod>
          <changefreq>daily</changefreq>
     </url>

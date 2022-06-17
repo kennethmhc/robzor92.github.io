@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#how-to-set-up-a-bigquery-storage-connector" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1449,10 +1454,84 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          BigQuery
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         BigQuery
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-in-the-ui" class="md-nav__link">
+    Creation in the UI
+  </a>
+  
+    <nav class="md-nav" aria-label="Creation in the UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-set-up-new-storage-connector" class="md-nav__link">
+    Step 1: Set up new storage connector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-enter-connector-details" class="md-nav__link">
+    Step 2: Enter connector details
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -4512,6 +4591,80 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-in-the-ui" class="md-nav__link">
+    Creation in the UI
+  </a>
+  
+    <nav class="md-nav" aria-label="Creation in the UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-set-up-new-storage-connector" class="md-nav__link">
+    Step 1: Set up new storage connector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-enter-connector-details" class="md-nav__link">
+    Step 2: Enter connector details
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -4519,9 +4672,77 @@
                 
 
 
-  <h1>BigQuery</h1>
-
-
+<h1 id="how-to-set-up-a-bigquery-storage-connector">How-To set up a BigQuery Storage Connector<a class="headerlink" href="#how-to-set-up-a-bigquery-storage-connector" title="Permanent link">#</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h2>
+<p>A BigQuery storage connector provides integration to Google Cloud BigQuery.
+BigQuery is Google Cloud's managed data warehouse supporting that lets you run analytics and 
+execute SQL queries over large scale data. Such data warehouses are often the source of raw data for feature 
+engineering pipelines.</p>
+<p>In this guide, you will configure a Storage Connector in Hopsworks to connect to your BigQuery project by saving the
+necessary information.
+When you're finished, you'll be able to execute queries and read results of BigQuery using Spark through 
+HSFS APIs.</p>
+<p>The storage connector uses the Google <code>spark-bigquery-connector</code> behind the scenes.
+To read more about the spark connector, like the spark options or usage, check <a href="https://github.com/GoogleCloudDataproc/spark-bigquery-connector#usage" title="github.com/GoogleCloudDataproc/spark-bigquery-connector">Apache Spark SQL connector for Google BigQuery.</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note<p>Currently, it is only possible to create storage connectors in the Hopsworks UI. You cannot create a storage connector programmatically.</p>
+</p>
+</div>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">#</a></h2>
+<p>Before you begin this guide you'll need to retrieve the following information about your GCP account:</p>
+<ul>
+<li><strong>BigQuery Project:</strong> You need a BigQuery project, dataset and table created and have read access to it. Or, if 
+  you wish to query a public dataset you need its corresponding details.</li>
+<li><strong>Authentication Method:</strong> Authentication to GCP account is handled by uploading the <code>JSON keyfile for service
+  account</code> to the Hopsworks Project. You will need to create this JSON keyfile from GCP. For more information on
+  service accounts
+  and creating keyfile in GCP, read <a href="https://cloud.google.com/docs/authentication/production#create_service_account" title="creating service account keyfile">Google Cloud documentation.</a></li>
+</ul>
+<h2 id="creation-in-the-ui">Creation in the UI<a class="headerlink" href="#creation-in-the-ui" title="Permanent link">#</a></h2>
+<h3 id="step-1-set-up-new-storage-connector">Step 1: Set up new storage connector<a class="headerlink" href="#step-1-set-up-new-storage-connector" title="Permanent link">#</a></h3>
+<p>Head to the Storage Connector View on Hopsworks (1) and set up a new storage connector (2).</p>
+<figure>
+<p><img alt="Storage Connector Creation" src="/assets/images/guides/fs/storage_connector/storage_connector_create.png" />
+  </p>
+<figcaption>The Storage Connector View in the User Interface</figcaption>
+</figure>
+<h3 id="step-2-enter-connector-details">Step 2: Enter connector details<a class="headerlink" href="#step-2-enter-connector-details" title="Permanent link">#</a></h3>
+<p>Enter the details for your BigQuery connector. Start by giving
+it a unique <strong>name</strong> and an optional
+<strong>description</strong>.</p>
+<figure>
+<p><img alt="BigQuery Connector Creation" src="/assets/images/guides/fs/storage_connector/bigquery_creation.png" />
+  </p>
+<figcaption>BigQuery Connector Creation Form</figcaption>
+</figure>
+<ol>
+<li>Choose <code>Google BigQuery</code> from the connector options.</li>
+<li>Next, set the name of the parent BigQuery project. This is used for billing by GCP.</li>
+<li>Authentication: Here you should upload your <code>JSON keyfile for service 
+   account</code> used for authentication. You can choose to either
+   upload from your local using <code>Upload new file</code> or choose an existing file within project using <code>From Project</code>.</li>
+<li>
+<p>Read Options: There are two ways to read via BigQuery, using the <strong>BigQuery Table</strong> or <strong>BigQuery Query</strong> option:</p>
+<ol>
+<li>The table option reads directly from the BigQuery table reference. In the UI set the below fields, <ol>
+<li><em>BigQuery Project</em>: The BigQuery project</li>
+<li><em>BigQuery Dataset</em>: The dataset of the table</li>
+<li><em>BigQuery Table</em>: The table to read</li>
+</ol>
+</li>
+<li>The second option is to read by executing a SQL query at runtime, by selecting <strong>BigQuery Query</strong> and setting,<ol>
+<li><em>Materiliazation Dataset</em>: Temporary dataset used by BigQuery for writing</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Spark Options: Optionally, you can set additional spark options using the <code>Key - Value</code> pairs</p>
+</li>
+</ol>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">#</a></h2>
+<p>Move on to the <a href="../../usage/">usage guide for storage connectors</a> to see how you can use your newly created BigQuery 
+connector.</p>
 
               
             </article>

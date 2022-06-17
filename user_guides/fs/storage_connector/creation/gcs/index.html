@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#how-to-set-up-a-gcs-storage-connector" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1463,10 +1468,84 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          GCS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         GCS
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-in-the-ui" class="md-nav__link">
+    Creation in the UI
+  </a>
+  
+    <nav class="md-nav" aria-label="Creation in the UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-set-up-new-storage-connector" class="md-nav__link">
+    Step 1: Set up new storage connector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-enter-connector-details" class="md-nav__link">
+    Step 2: Enter connector details
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -4512,6 +4591,80 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-in-the-ui" class="md-nav__link">
+    Creation in the UI
+  </a>
+  
+    <nav class="md-nav" aria-label="Creation in the UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-set-up-new-storage-connector" class="md-nav__link">
+    Step 1: Set up new storage connector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-enter-connector-details" class="md-nav__link">
+    Step 2: Enter connector details
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    Next Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -4519,9 +4672,64 @@
                 
 
 
-  <h1>GCS</h1>
-
-
+<h1 id="how-to-set-up-a-gcs-storage-connector">How-To set up a GCS Storage Connector<a class="headerlink" href="#how-to-set-up-a-gcs-storage-connector" title="Permanent link">#</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h2>
+<p>This particular type of storage connector provides integration to Google Cloud Storage (GCS). GCS is 
+an object storage service offered by Google Cloud. An object could be simply any piece 
+of immutable data consisting of a file of any format, for example a <code>CSV</code> or <code>PARQUET</code>. These objects are stored in 
+containers called as <code>buckets</code>.</p>
+<p>These types of storages are often the source for raw data from which features can be engineered.</p>
+<p>In this guide, you will configure a Storage Connector in Hopsworks to connect to your GCS bucket by saving the 
+necessary information.
+When you're finished, you'll be able to read files from the GCS bucket using Spark through HSFS APIs.</p>
+<p>The storage connector uses the Google <code>gcs-connector-hadoop</code> behind the scenes. For more information, check out <a href="https://github.com/GoogleCloudDataproc/hadoop-connectors/tree/master/gcs#google-cloud-storage-connector-for-spark-and-hadoop" title="google-cloud-storage-connector-for-spark-and-hadoop">Google Cloud Storage Connector for Spark and Hadoop</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently, it is only possible to create storage connectors in the Hopsworks UI. You cannot create a storage connector programmatically.</p>
+</div>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">#</a></h2>
+<p>Before you begin this guide you'll need to retrieve the following information about your GCP account and bucket:</p>
+<ul>
+<li><strong>Bucket:</strong> You need a GCS bucket created and have read access to it. The bucket is identified by its name.</li>
+<li><strong>Authentication Method:</strong> Authentication to GCP account is handled by uploading the <code>JSON keyfile for service 
+  account</code> to the Hopsworks Project. You will need to create this JSON keyfile from GCP. For more information on 
+  service accounts 
+  and creating keyfile in GCP, read <a href="https://cloud.google.com/docs/authentication/production#create_service_account" title="creating service account keyfile">Google Cloud documentation.</a></li>
+<li><strong>Server-side Encryption</strong> GCS encrypts the data on server side by default. The connector additionally supports the 
+  optional encryption method <code>Customer Supplied Encryption Key</code> by GCP. You can choose the encryption option <code>AES-256</code> and provide AES-256 key and hash, encoded in 
+  standard Base64. The encryption details are stored as <a href="/user_guides/common/secrets/create_secret">Secrets</a> 
+  in the Hopsworks for keeping it secure.
+  Read more about encryption on <a href="https://cloud.google.com/storage/docs/encryption/customer-supplied-keys">Google Documentation.</a></li>
+</ul>
+<h2 id="creation-in-the-ui">Creation in the UI<a class="headerlink" href="#creation-in-the-ui" title="Permanent link">#</a></h2>
+<h3 id="step-1-set-up-new-storage-connector">Step 1: Set up new storage connector<a class="headerlink" href="#step-1-set-up-new-storage-connector" title="Permanent link">#</a></h3>
+<p>Head to the Storage Connector View on Hopsworks (1) and set up a new storage connector (2).</p>
+<figure>
+<p><img alt="Storage Connector Creation" src="/assets/images/guides/fs/storage_connector/storage_connector_create.png" />
+  </p>
+<figcaption>The Storage Connector View in the User Interface</figcaption>
+</figure>
+<h3 id="step-2-enter-connector-details">Step 2: Enter connector details<a class="headerlink" href="#step-2-enter-connector-details" title="Permanent link">#</a></h3>
+<p>Enter the details for your GCS connector. Start by giving 
+it a unique <strong>name</strong> and an optional 
+<strong>description</strong>.</p>
+<figure>
+<p><img alt="GCS Connector Creation" src="/assets/images/guides/fs/storage_connector/gcs_creation.png" />
+  </p>
+<figcaption>GCS Connector Creation Form</figcaption>
+</figure>
+<ol>
+<li>Choose <code>Google Cloud Storage</code> from the connector options.</li>
+<li>Next, set the name of the GCS Bucket you wish to connect with.</li>
+<li>Authentication: Here you should upload your <code>JSON keyfile for service
+   account</code> used for authentication. You can choose to either
+   upload from your local using <code>Upload new file</code> or choose an existing file within project using <code>From Project</code>.</li>
+<li>GCS Server Side Encryption: You can leave this to <code>Default Encryption</code> if you do not wish to provide explicit encrypting keys. Otherwise, 
+optionally you can set the encryption setting for <code>AES-256</code> and provide the encryption key and hash when selected.</li>
+</ol>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">#</a></h2>
+<p>Move on to the <a href="../../usage/">usage guide for storage connectors</a> to see how you can use your newly created GCS 
+connector.</p>
 
               
             </article>

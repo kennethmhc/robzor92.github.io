@@ -2157,7 +2157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/deployment/predictor.md" class="md-nav__link">
+      <a href="../../../user_guides/ml/deployment/predictor/" class="md-nav__link">
         Custom Predictor
       </a>
     </li>
@@ -2171,7 +2171,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/deployment/transformer.md" class="md-nav__link">
+      <a href="../../../user_guides/ml/deployment/transformer/" class="md-nav__link">
         Transformer
       </a>
     </li>
@@ -2185,7 +2185,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/deployment/transformer.md" class="md-nav__link">
+      <a href="../../../user_guides/ml/deployment/transformer/" class="md-nav__link">
         Resource Configuration
       </a>
     </li>
@@ -2199,7 +2199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/deployment/transformer.md" class="md-nav__link">
+      <a href="../../../user_guides/ml/deployment/transformer/" class="md-nav__link">
         Inference Logger
       </a>
     </li>
@@ -2213,7 +2213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user_guides/ml/deployment/transformer.md" class="md-nav__link">
+      <a href="../../../user_guides/ml/deployment/transformer/" class="md-nav__link">
         Inference Batcher
       </a>
     </li>
@@ -4534,7 +4534,7 @@
   <h1>Model Serving</h1>
 
 <p>KServe is an open-source framework for model serving on Kubernetes.
-In Hopsworks, you can easily deploy models from the model registry in KServe or in Docker containers (for Hopsworks Community). You can deploy model in either programs, using the HSML library, or in the UI. A KServe model deployment can include the following components:</p>
+In Hopsworks, you can easily deploy models from the model registry in KServe or in Docker containers (for Hopsworks Community). You can deploy models in either programs, using the HSML library, or in the UI. A KServe model deployment can include the following components:</p>
 <ul>
 <li><strong>Transformer</strong><ul>
 <li>A pre-processing and post-processing component that can transform model inputs before predictions are made</li>
@@ -4544,8 +4544,12 @@ In Hopsworks, you can easily deploy models from the model registry in KServe or 
 <li>A predictor is a ML model in a Python object that takes a feature vector as input and returns a prediction as output</li>
 </ul>
 </li>
-<li><strong>Logger</strong><ul>
-<li>Hopsworks logs inputs and outputs to transformers and predictors to a Kafka topic that is part of the same project as the model</li>
+<li><strong>Inference Logger</strong><ul>
+<li>Hopsworks logs inputs and outputs of transformers and predictors to a Kafka topic that is part of the same project as the model</li>
+</ul>
+</li>
+<li><strong>Inference Batcher</strong><ul>
+<li>Inference requests can be batched in different ways to adjust the trade-off between throughput and latencies of the model predictions</li>
 </ul>
 </li>
 <li><strong>Versioned Deployments</strong><ul>

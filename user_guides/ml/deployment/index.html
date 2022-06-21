@@ -19,7 +19,7 @@
     
     
       
-        <title>Index - Hopsworks Documentation</title>
+        <title>How To Create A Deployment - Hopsworks Documentation</title>
       
     
     
@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#how-to-create-a-deployment" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              How To Create A Deployment
             
           </span>
         </div>
@@ -2151,7 +2156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="predictor.md" class="md-nav__link">
+      <a href="predictor/" class="md-nav__link">
         Custom Predictor
       </a>
     </li>
@@ -2165,7 +2170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="transformer.md" class="md-nav__link">
+      <a href="transformer/" class="md-nav__link">
         Transformer
       </a>
     </li>
@@ -2179,7 +2184,7 @@
   
   
     <li class="md-nav__item">
-      <a href="transformer.md" class="md-nav__link">
+      <a href="transformer/" class="md-nav__link">
         Resource Configuration
       </a>
     </li>
@@ -2193,7 +2198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="transformer.md" class="md-nav__link">
+      <a href="transformer/" class="md-nav__link">
         Inference Logger
       </a>
     </li>
@@ -2207,7 +2212,7 @@
   
   
     <li class="md-nav__item">
-      <a href="transformer.md" class="md-nav__link">
+      <a href="transformer/" class="md-nav__link">
         Inference Batcher
       </a>
     </li>
@@ -4518,6 +4523,190 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gui" class="md-nav__link">
+    GUI
+  </a>
+  
+    <nav class="md-nav" aria-label="GUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-create-a-deployment" class="md-nav__link">
+    Step 1: Create a deployment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-simplified-deployment-form" class="md-nav__link">
+    Step 2: Simplified deployment form
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-optional-advanced-deployment-form" class="md-nav__link">
+    Step 3 (Optional): Advanced deployment form
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-deployment-creation" class="md-nav__link">
+    Step 4: Deployment creation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-deployment-overview" class="md-nav__link">
+    Step 5: Deployment overview
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    Code
+  </a>
+  
+    <nav class="md-nav" aria-label="Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-connect-to-hopsworks" class="md-nav__link">
+    Step 1: Connect to Hopsworks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-deployment" class="md-nav__link">
+    Step 2: Create deployment
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: Create deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-a-using-the-model-object" class="md-nav__link">
+    Option A: Using the model object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#option-b-using-the-model-serving-handle" class="md-nav__link">
+    Option B: Using the Model Serving handle
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-reference" class="md-nav__link">
+    API Reference
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#model-artifact" class="md-nav__link">
+    Model Artifact
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#predictor" class="md-nav__link">
+    Predictor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transformer" class="md-nav__link">
+    Transformer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inference-logger" class="md-nav__link">
+    Inference logger
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inference-batcher" class="md-nav__link">
+    Inference batcher
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -4525,9 +4714,180 @@
                 
 
 
-  <h1>Index</h1>
+<h1 id="how-to-create-a-deployment">How To Create A Deployment<a class="headerlink" href="#how-to-create-a-deployment" title="Permanent link">#</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h2>
+<p>In this guide, you will learn how to create a new deployment for a trained model.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This guide assumes that a model has already been trained and saved into the Model Registry. To learn how to create a model in the Model Registry, see <a href="../model/">Model Registry Guide</a></p>
+</div>
+<p>Deployments are used to unify the different components involved in making one or more trained models online and accessible to compute predictions on demand. In each deployment, there are three main components to consider:</p>
+<div class="admonition info">
+<ol>
+<li><a href="#model-artifact">Model artifact</a></li>
+<li><a href="#predictor">Predictor</a></li>
+<li><a href="#transformer">Transformer</a></li>
+</ol>
+</div>
+<h2 id="gui">GUI<a class="headerlink" href="#gui" title="Permanent link">#</a></h2>
+<h3 id="step-1-create-a-deployment">Step 1: Create a deployment<a class="headerlink" href="#step-1-create-a-deployment" title="Permanent link">#</a></h3>
+<p>If you have at least one model already trained and saved in the Model Registry, navigate to the deployments page by clicking on the <code>Deployments</code> tab on the navigation menu on the left.</p>
+<!-- TODO: Add image with sidebar menu -->
 
-<p>Deployment index</p>
+<p color=red>CHANGE IMAGE</p>
+<p align="center">
+  <figure>
+    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
+    <figcaption>List of created API Keys</figcaption>
+  </figure>
+</p>
+
+<p>Once in the deployments page, click on <code>Create new deployment</code> on the top-right corner to open the deployment creation form.</p>
+<h3 id="step-2-simplified-deployment-form">Step 2: Simplified deployment form<a class="headerlink" href="#step-2-simplified-deployment-form" title="Permanent link">#</a></h3>
+<p>A simplified creation form will appear including the most common deployment fields among all the configuration possible. We provide default values for the rest of the fields, adjusted to the type of deployment you want to create.</p>
+<p>In the simplified form, select the model framework used to train your model <em>(a)</em>. Then, select the model you want to deploy from the list of available models in the Model Registry <em>(b)</em>.</p>
+<p>After selecting the model, the rest of fields are filled automatically. We pick the last model version <em>(c)</em> and model artifact version <em>(d)</em> available in the Model Registry. Moreover, we infer the deployment name <em>(e)</em> from the name given to the model.</p>
+<div class="admonition notice">
+<p class="admonition-title">Deployment name validation rules</p>
+<p>A valid deployment name can only contain characters a-z, A-Z and 0-9.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Predictor script for Python models</p>
+<p>For Python models, you can select a custom <a href="#predictor">predictor script</a> to load and run the trained model by clicking on <code>Select predictor</code> <em>(f)</em>.</p>
+</div>
+<p>If you prefer, change the name of the deployment, model version or <a href="#model-artifact">artifact version</a>. Then, click on <code>Create deployment</code> to create the deployment for your model.</p>
+<!-- TODO: Image of quick deployment form with letters a), b), c)... -->
+<p color=red>CHANGE IMAGE</p>
+<p align="center">
+  <figure>
+    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
+    <figcaption>List of created API Keys</figcaption>
+  </figure>
+</p>
+
+<h3 id="step-3-optional-advanced-deployment-form">Step 3 (Optional): Advanced deployment form<a class="headerlink" href="#step-3-optional-advanced-deployment-form" title="Permanent link">#</a></h3>
+<p>Optionally, you can access and adjust other parameters of the deployment configuration by clicking on <code>Advanced configuration</code>.</p>
+<!-- TODO: Image highlighting the button -->
+<p color=red>CHANGE IMAGE</p>
+<p align="center">
+  <figure>
+    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
+    <figcaption>List of created API Keys</figcaption>
+  </figure>
+</p>
+
+<p>You will be redirected to a full-page deployment creation form where you can see all the default configuration values we selected for your deployment and adjust them according to your use case. Apart from the aforementioned simplified configuration, in this form you can modify the following components:</p>
+<div class="admonition info">
+<p class="admonition-title">Deployment advanced configuration</p>
+<ol>
+<li><a href="#transformer">Transformer</a></li>
+<li><a href="#inference-logger">Inference logger</a></li>
+<li><a href="#inference-batcher">Inference batcher</a></li>
+<li><a href="#resources">Resources</a></li>
+</ol>
+</div>
+<!-- TODO: Image of full deployment form ??? or we skip image here and include an image per component in the corresponding docs page (transformer.md, ...) -->
+<p color=red>CHANGE IMAGE</p>
+<p align="center">
+  <figure>
+    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
+    <figcaption>List of created API Keys</figcaption>
+  </figure>
+</p>
+
+<p>Once you are done with the changes, click on <code>Create deployment</code> at the end of the page to create the deployment for your model.</p>
+<h3 id="step-4-deployment-creation">Step 4: Deployment creation<a class="headerlink" href="#step-4-deployment-creation" title="Permanent link">#</a></h3>
+<p>Wait for the deployment creation process to finish.</p>
+<!-- TODO: Image Create deployment button loading -->
+<p color=red>CHANGE IMAGE</p>
+<p align="center">
+  <figure>
+    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
+    <figcaption>List of created API Keys</figcaption>
+  </figure>
+</p>
+
+<h3 id="step-5-deployment-overview">Step 5: Deployment overview<a class="headerlink" href="#step-5-deployment-overview" title="Permanent link">#</a></h3>
+<p>Once the deployment is created, you will be redirected to the list of all your existing deployments in the project. You can use the filters on the top of the page to easily locate your new deployment.</p>
+<!-- TODO: Image deployment list / filters -->
+<p color=red>CHANGE IMAGE</p>
+<p align="center">
+  <figure>
+    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
+    <figcaption>List of created API Keys</figcaption>
+  </figure>
+</p>
+
+<p>After that, click on the new deployment to access the overview page.</p>
+<!-- TODO: Deployment overview page -->
+<p color=red>CHANGE IMAGE</p>
+<p align="center">
+  <figure>
+    <img src="../../../../assets/images/guides/project/project_overview.png" alt="API Keys">
+    <figcaption>List of created API Keys</figcaption>
+  </figure>
+</p>
+
+<h2 id="code">Code<a class="headerlink" href="#code" title="Permanent link">#</a></h2>
+<h3 id="step-1-connect-to-hopsworks">Step 1: Connect to Hopsworks<a class="headerlink" href="#step-1-connect-to-hopsworks" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">hopsworks</span>
+
+<span class="n">connection</span> <span class="o">=</span> <span class="n">hopsworks</span><span class="o">.</span><span class="n">connection</span><span class="p">()</span>
+
+<span class="n">project</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">get_project</span><span class="p">(</span><span class="s2">&quot;my_project&quot;</span><span class="p">)</span>
+
+<span class="n">mr</span> <span class="o">=</span> <span class="n">project</span><span class="o">.</span><span class="n">get_model_registry</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="step-2-create-deployment">Step 2: Create deployment<a class="headerlink" href="#step-2-create-deployment" title="Permanent link">#</a></h3>
+<p>Retrieve the trained model you want to deploy.</p>
+<div class="highlight"><pre><span></span><code><span class="n">my_model</span> <span class="o">=</span> <span class="n">mr</span><span class="o">.</span><span class="n">get_model</span><span class="p">(</span><span class="s2">&quot;my_model&quot;</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="option-a-using-the-model-object">Option A: Using the model object<a class="headerlink" href="#option-a-using-the-model-object" title="Permanent link">#</a></h4>
+<div class="highlight"><pre><span></span><code><span class="n">my_deployment</span> <span class="o">=</span> <span class="n">my_model</span><span class="o">.</span><span class="n">deploy</span><span class="p">()</span>
+</code></pre></div>
+<h4 id="option-b-using-the-model-serving-handle">Option B: Using the Model Serving handle<a class="headerlink" href="#option-b-using-the-model-serving-handle" title="Permanent link">#</a></h4>
+<div class="highlight"><pre><span></span><code><span class="n">ms</span> <span class="o">=</span> <span class="n">project</span><span class="o">.</span><span class="n">get_model_serving</span><span class="p">()</span>
+
+<span class="n">my_predictor</span> <span class="o">=</span> <span class="n">ms</span><span class="o">.</span><span class="n">create_predictor</span><span class="p">(</span><span class="n">my_model</span><span class="p">)</span>
+<span class="n">my_deployment</span> <span class="o">=</span> <span class="n">my_predictor</span><span class="o">.</span><span class="n">deploy</span><span class="p">()</span>
+
+<span class="c1"># or</span>
+<span class="n">my_deployment</span> <span class="o">=</span> <span class="n">ms</span><span class="o">.</span><span class="n">create_deployment</span><span class="p">(</span><span class="n">my_predictor</span><span class="p">)</span>
+<span class="n">my_deployment</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</code></pre></div>
+<h3 id="api-reference">API Reference<a class="headerlink" href="#api-reference" title="Permanent link">#</a></h3>
+<p><a href="https://docs.hopsworks.ai/hopsworks-api/dev/generated/api/deployment/">Model Serving</a></p>
+<h2 id="model-artifact">Model Artifact<a class="headerlink" href="#model-artifact" title="Permanent link">#</a></h2>
+<p>A model artifact is a package containing all of the necessary files for the deployment of a model. It includes the model file(s) and/or custom scripts for loading the model (predictor script) or transforming the model inputs at inference time (the transformer script).</p>
+<p>When a new deployment is created, a model artifact is generated in two cases:</p>
+<ul>
+<li>the artifact version in the predictor is set to <code>CREATE</code> (see <a href="predictor.md/#artifact_version">Artifact Version</a>)</li>
+<li>no model artifact with the same files has been created before.</li>
+</ul>
+<h2 id="predictor">Predictor<a class="headerlink" href="#predictor" title="Permanent link">#</a></h2>
+<p>Predictors are responsible for running the model server that loads the trained model, listens to inference requests and returns prediction results. To learn more about predictors, see the <a href="predictor/">Predictor Guide</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently, only one predictor is supported in a deployment. Support for multiple predictors (the inference graphs) is coming soon.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Model artifacts are assigned an incremental version number, being <code>0</code> the version reserved for model artifacts that do not contain predictor or transformer scripts (i.e., shared artifacts containing only the model files).</p>
+</div>
+<h2 id="transformer">Transformer<a class="headerlink" href="#transformer" title="Permanent link">#</a></h2>
+<p>Transformers are used to apply transformations on the model inputs before sending them to the predictor for making predictions using the model. To learn more about transformers, see the <a href="transformer/">Transformer Guide</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Transformers are only supported in KServe deployments. For more details, see the <a href="predictor/">Predictor Guide</a>.</p>
+</div>
+<h2 id="inference-logger">Inference logger<a class="headerlink" href="#inference-logger" title="Permanent link">#</a></h2>
+<p>Inference loggers are deployment components that log inference requests into a Kafka topic for later analysis. To learn about the different logging modes, see the <a href="inference-logger/">Inference Logger Guide</a></p>
+<h2 id="inference-batcher">Inference batcher<a class="headerlink" href="#inference-batcher" title="Permanent link">#</a></h2>
+<p>Inference batcher are deployment component that apply batching to the incoming inference requests for a better throughput-latency trade-off. To learn about the different configuration available for the inference batcher, see the <a href="inference-batcher/">Inference Batcher Guide</a>.</p>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">#</a></h2>
+<p>Resources include the number of replicas for the deployment as well as the resources (i.e., memory, CPU, GPU) to be allocated per replica. To learn about the different combinations available, see the <a href="resources/">Resources Guide</a>.</p>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">#</a></h2>
+<p>In this guide you learned how to create a deployment.</p>
 
               
             </article>
@@ -4557,13 +4917,13 @@
       
       
         
-        <a href="../vector_database/vector_database/" class="md-footer__link md-footer__link--next" aria-label="Next: Vector Database" rel="next">
+        <a href="predictor/" class="md-footer__link md-footer__link--next" aria-label="Next: Custom Predictor" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Vector Database
+              Custom Predictor
             </div>
           </div>
           <div class="md-footer__button md-icon">
